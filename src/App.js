@@ -1,16 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { PostsList } from './PostsList';
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route path="/" exact component={PostsList} />
-        </Switch>
-      </Router>
+      {/* <h1>
+        Math for Kids
+      </h1> */}
+      <div className='math'>
+        <div className='addition'>4 + 2 = 
+        </div>
+        <input className='answer' type="number" step="none">
+
+        </input>
+      </div>
       </div>
   );
 }
